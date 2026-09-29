@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Riverbend Yoga Studio: Events</title>
+    </head>
+    <body>
+        <header>
+            <h1>Workshop and Events</h1>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./events.html">Events</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Upcoming Workshops</h2>
+                <figure>
+                    <img src="./assets/yoga-workshop_c.png" alt="Yoga students participating in a guided studio workshop">
+                    <figcaption>We offer monthly workshops for students who want to explore yoga in a supportive group setting!</figcaption>
+                </figure>
+                <ul>
+                    <li>Saturday, June 15th: Mindfulness and Meditation Workshop</li>
+                    <li>Sunday, July 7th: Yoga for Stress Relief Workshop</li>
+                    <li>Saturday, August 10th: Partner Yoga Workshop</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Request a Spot</h2>
+                <p>Complete this form if you are interested in a class or upcoming workshops. We will contact you with additional information.</p>
+                <form action="#" method="post">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required minlength="2">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="interest">Class or Event Interest:</label>
+                        <br>
+                        <select id="interest" name="interest" required>
+                            <option value="">Choose an option</option>
+                            <option value="gentle">Gentle Yoga</option>
+                            <option value="vinyasa">Vinyasa Flow</option>
+                            <option value="restorative">Restorative Yoga</option>
+                            <option value="private">Private Instruction</option>
+                            <option value="mindfulness-meditation">Mindfulness and Meditation Workshop</option>
+                            <option value="stress-relief">Yoga for Stress Relief Workshop</option>
+                            <option value="partner-yoga">Partner Yoga Workshop</option>
+                    </p>
+                    <fieldset>
+                        <legend>Experience Level</legend>
+                        <input type="radio" id="beginner" name="experience" value="beginner" required>
+                        <label for="beginner">Beginner</label>
+                        <input type="radio" id="intermediate" name="experience" value="intermediate">
+                        <label for="intermediate">Intermediate</label>
+                        <input type="radio" id="advanced" name="experience" value="advanced">
+                        <label for="advanced">Advanced</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                        <label for="contact-email">Email</label><br>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </fieldset>
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Use the format 123-456-7890">
+                    </p>
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Request Spot</button>
+                    </p>
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; 2024 Riverbend Yoga Studio. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
