@@ -175,3 +175,25 @@ footer {
         padding: 2rem;
     }
 }
+
+#class-result {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f7f3ed;
+    border-radius: 5px;
+}
+
+#class-result:empty {
+    display: none;
+}
+
+.error-message {
+    color: #8b1e1e;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.success-message {
+    font-weight: bold;
+}

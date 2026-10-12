@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Riverbend Yoga Studio: Services</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -35,6 +36,18 @@
                 <p>Vinyasa Flow is a dynamic class that links movement with breath. It is suitable for those with some yoga experience and looking for a more challenging practice.</p>
                 <h3>Restorative Yoga</h3>
                 <p>Restorative Yoga is a deeply relaxing class that uses props to support the body in various poses. It is suitable for all levels and is especially beneficial for stress relief and relaxation.</p>
+            </section>
+            <section>
+                <h2>Find a Class</h2>
+                <p>Choose a class to see more information.</p>
+                <label for="class-choice">Choose a class:</label>
+                <select id="class-choice" name="class-choice">
+                    <option value="">Select a class</option>
+                    <option value="gentle">Gentle Yoga</option>
+                    <option value="vinyasa">Vinyasa Flow</option>
+                    <option value="restorative">Restorative Yoga</option>
+                </select>
+                <div id="class-result" aria-live="polite"></div>
             </section>
             <section>
                 <h2>Private Sessions</h2>

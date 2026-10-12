@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Riverbend Yoga Studio: Events</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -42,14 +43,16 @@
             <section>
                 <h2>Request a Spot</h2>
                 <p>Complete this form if you are interested in a class or upcoming workshops. We will contact you with additional information.</p>
-                <form action="#" method="post">
+                <form id="interest-form" action="#" method="post">
                     <p>
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required minlength="2">
+                        <span class="error-message" id="name-error" aria-live="polite"></span>
                     </p>
                     <p>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error" aria-live="polite"></span>
                     </p>
                     <p>
                         <label for="interest">Class or Event Interest:</label>
@@ -63,6 +66,8 @@
                             <option value="mindfulness-meditation">Mindfulness and Meditation Workshop</option>
                             <option value="stress-relief">Yoga for Stress Relief Workshop</option>
                             <option value="partner-yoga">Partner Yoga Workshop</option>
+                        </select>
+                        <span class="error-message" id="interest-error" aria-live="polite"></span>
                     </p>
                     <fieldset>
                         <legend>Experience Level</legend>
@@ -72,6 +77,7 @@
                         <label for="intermediate">Intermediate</label>
                         <input type="radio" id="advanced" name="experience" value="advanced">
                         <label for="advanced">Advanced</label>
+                        <span class="error-message" id="experience-error" aria-live="polite"></span>
                     </fieldset>
                     <fieldset>
                         <legend>Preferred Contact Method</legend>
@@ -79,18 +85,22 @@
                         <label for="contact-email">Email</label><br>
                         <input type="radio" id="contact-phone" name="contact-method" value="phone">
                         <label for="contact-phone">Phone</label>
+                        <span class="error-message" id="contact-error" aria-live="polite"></span>
                     </fieldset>
                     <p>
                         <label for="phone">Phone Number:</label><br>
                         <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Use the format 123-456-7890">
+                        <span class="error-message" id="phone-error" aria-live="polite"></span>
                     </p>
                     <p>
                         <label for="message">Message:</label><br>
                         <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                        <span class="error-message" id="message-error" aria-live="polite"></span>
                     </p>
                     <p>
                         <button type="submit">Request Spot</button>
                     </p>
+                    <p id="form-status" class="success-message" role="status"></p>
                 </form>
             </section>
 
